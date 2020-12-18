@@ -26,21 +26,21 @@ export const ProjectsItem = ({project}) => {
                 {
                     (url) && 
                     <p className="projects__item-description">App's Link: 
-                        <a href={url} target="_blank" className="projects__item-link"> {url}</a>
+                        <a href={url} rel="noreferrer" target="_blank" className="projects__item-link"> {url}</a>
                     </p>
                 }
                 {       
                     ( repo.length > 0 ) && 
                     <p className="projects__item-description">Repository: 
                         {
-                            repo.map( (itemRepo,i) => <a key={i} href={itemRepo} target="_blank" className="projects__item-link"> {itemRepo}</a>)
+                            repo.map( (itemRepo,i) => <a key={i} rel="noreferrer" href={itemRepo} target="_blank" className="projects__item-link"> {itemRepo}</a>)
                         }
                         
                     </p>
                 }
             </div>
             <div className="projects__item-img">
-                <img src={image} />
+                <img src={image} alt={title}/>
             </div>
         </div>
     )

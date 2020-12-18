@@ -32,3 +32,26 @@
        line-height: 40px;
     }
 }
+
+@media(max-width:1228px){
+
+#about {
+    margin: 1px;
+    padding: 20px;
+}
+
+.about__container {
+    p{
+        font-size:15px;
+        line-height: 20px;
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+        margin-right: 50px;
+        border-radius: 30px;
+    }
+}
+
+}

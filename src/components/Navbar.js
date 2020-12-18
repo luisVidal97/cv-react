@@ -16,13 +16,24 @@ export const Navbar = () => {
         ;
     }
 
+    const hideMenu = () => {
+
+    }
+
     return (
         <section id="navbar">
             <nav className="navbar__container">
+
                 <div className="navbar__brand">
                     <a href="#banner"> <span>L</span>UIS <span>C</span>RUCES</a>
                 </div>
+
                 <div className="navbar__navigator">
+                    <div className="navbar__hamburger" onClick={hideMenu}> 
+                        <div className="navbar__hamburger-bar1"></div> 
+                        <div className="navbar__hamburger-bar2"></div> 
+                        <div className="navbar__hamburger-bar1"></div> 
+                    </div>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -31,6 +42,7 @@ export const Navbar = () => {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                
             </nav>
         </ section>
     )

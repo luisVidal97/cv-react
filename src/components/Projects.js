@@ -65,7 +65,7 @@ export const Projects = () => {
             </div>
             <h3 className="projects__beside"> 
                 If you are interesting to check more projects I have worked, please visit my 
-                 <a href="https://github.com/luisVidal97" target="_blank">
+                 <a href="https://github.com/luisVidal97" rel="noreferrer" target="_blank" >
                       GitHub 
                 </a> 
                 or contact with me!

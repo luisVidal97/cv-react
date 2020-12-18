@@ -1,9 +1,11 @@
 html, body {
-    margin: 0px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;   
 }
 
 ul {
