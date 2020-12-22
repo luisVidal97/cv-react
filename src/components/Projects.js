@@ -6,6 +6,16 @@ export const Projects = () => {
 
     const projects = [
         {
+            title: 'JournalApp',
+            description: `Awesome and interesting app create like a part of the React course. This is just a simple notes application where you can 
+            register and sign in. Then, you can create different notes with title, description and a picture. That is very handful. This app was developed using react hooks,
+            Redux, firebase and so on! Google auth isn't available. But if you wanna check, you could reister using any user. If you just wish sign in, 
+            you could use this user: sample@gmail.com , password: 123456`,
+            image: './assets/projects/journalapp.png',
+            repo: ['https://github.com/luisVidal97/journal-app-react'],
+            url: 'https://pensive-kilby-616b02.netlify.app'
+        },
+        {
             title: 'HeroApp',
             description: `This application is a part of my course about React. I like heroes and whole Marvel universe, so for me, it was very fun
             building this site and learn, at the same time, about this powerful Library.`,
