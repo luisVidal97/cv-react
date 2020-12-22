@@ -16,7 +16,7 @@ export const Navbar = () => {
         ;
     }
 
-    const hideMenu = () => {
+    const showHideMenu = () => {
 
     }
 
@@ -29,7 +29,7 @@ export const Navbar = () => {
                 </div>
 
                 <div className="navbar__navigator">
-                    <div className="navbar__hamburger" onClick={hideMenu}> 
+                    <div className="navbar__hamburger" onClick={showHideMenu}> 
                         <div className="navbar__hamburger-bar1"></div> 
                         <div className="navbar__hamburger-bar2"></div> 
                         <div className="navbar__hamburger-bar1"></div> 

@@ -111,6 +111,22 @@ ul {
     }
 }
 
+@media (max-width: 360px){
+    .navbar__brand {
+        width: 70%;
+        a {
+            font-size: 1.7rem;
+        }
+    }
+
+    .navbar__hamburger{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+    
+}
+
 @keyframes highlightMenu{
     from{
         opacity: 1;

@@ -69,3 +69,35 @@
     text-decoration: underline;
     margin: auto 6px;
 }
+
+@media (max-width: 1430px){
+
+    .projects__item-s{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .projects__item-information{
+        width: 80%;
+        height: 300px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .projects__item-img{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            border-radius: 20px;
+            width: 80%;
+            
+            
+        }
+    }
+}
