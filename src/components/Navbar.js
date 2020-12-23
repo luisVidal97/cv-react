@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export const Navbar = () => {
+
+    const itemsNavbar = useRef(null);
 
     useEffect(() => {
         document.addEventListener('scroll', handleScroll );
@@ -16,8 +18,11 @@ export const Navbar = () => {
         ;
     }
 
-    const showHideMenu = () => {
-
+    const showMenu = () => {
+        const items = itemsNavbar.current;
+        console.log(items);
+        items.classList.toggle('navbar__actived-menu');
+        
     }
 
     return (
@@ -29,17 +34,17 @@ export const Navbar = () => {
                 </div>
 
                 <div className="navbar__navigator">
-                    <div className="navbar__hamburger" onClick={showHideMenu}> 
+                    <div className="navbar__hamburger" onClick={showMenu}> 
                         <div className="navbar__hamburger-bar1"></div> 
                         <div className="navbar__hamburger-bar2"></div> 
                         <div className="navbar__hamburger-bar1"></div> 
                     </div>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul ref={itemsNavbar} className="itemsNavigator">
+                        <li><a href="#home" onClick={showMenu}>Home</a></li>
+                        <li><a href="#projects" onClick={showMenu}>Projects</a></li>
+                        <li><a href="#about" onClick={showMenu}>About me</a></li>
+                        <li><a href="#skills" onClick={showMenu}>Skills</a></li>
+                        <li><a href="#contact" onClick={showMenu}>Contact</a></li>
                     </ul>
                 </div>
                 

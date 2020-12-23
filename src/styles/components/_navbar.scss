@@ -64,9 +64,26 @@ ul {
     .navbar__navigator{
         flex-direction: row-reverse;
         width: 30%;
+        
 
-        ul {
+        .itemsNavigator{
             display: none;
+        }
+
+        .navbar__actived-menu {
+            
+            left: 0;
+            position: fixed;
+            top: 80px;
+            margin: 0;
+            height: 100%;
+            width: 102vw;
+            background-color: #242424;
+            align-items: center;
+
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
         }
 
         .navbar__hamburger{
