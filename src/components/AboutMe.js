@@ -10,7 +10,7 @@ export const AboutMe = () => {
                     <span> Software Developer</span>
                     <br />
                     Hi! My name is Luis Fernando Cruces Vidal and I am a software developer. 
-                    Currently, I am finishing my last semester of Software Systems Engineering at Icesi  University in Cali, Colombia. 
+                    Currently, I am graduated at Icesi University in Cali, Colombia. 
                     I am a tech lover who enjoys solving problems for people and organizations to improve their lives and processes. 
                     I am passionate about writing code and finding innovative ways to enhace the performance of the apps I develop.  
                     <br />
